@@ -14,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    @for( emp of employees ; track emp.id) {
+    @for( emp of employees() ; track emp.id) {
       <tr>
         <td>{{emp.id}}</td>
         <td>{{emp.name}}</td>
@@ -37,7 +37,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
+            <h5 class="modal-title">Dolgozó felvétele</h5>
             <button type="button" class="btn-close" 
             data-bs-dismiss="modal" aria-label="Close"
             (click)="toggleModal()"></button>
